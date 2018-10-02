@@ -53,7 +53,7 @@ namespace OnlineAD.Api.Domain
             get
             {
                 return _directoryEntry ?? (_directoryEntry =
-                     new DirectoryEntry(LDapConnectionString, "dymcrm", "Controller10$",
+                     new DirectoryEntry(LDapConnectionString, "dymcrm", "AD$3rv1c3",
                        AuthenticationTypes.Secure));
             }
         }
@@ -68,7 +68,7 @@ namespace OnlineAD.Api.Domain
             {
                 var de = new DirectoryEntry(LDapConnectionString,
                   "dymcrm",
-                  "Controller10$")
+                  "AD$3rv1c3")
                 { AuthenticationType = AuthenticationTypes.Secure };
 
                 var deSearch = new DirectorySearcher
